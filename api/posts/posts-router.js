@@ -4,12 +4,6 @@ const Posts = require('./posts-model');
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  const messageOfTheDay = process.env.MOTD || 'Hello welcome to my API server! ٩(｡•́‿•̀｡)۶'
-  res.status(200).json({ messageOfTheDay, api: "up" });
-});
-
-
 router.get('/', (req, res) => {
   // console.log(req)
   // console.log(res)
